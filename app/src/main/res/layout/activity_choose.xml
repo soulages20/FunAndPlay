@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#89fd15"
+    android:padding="20dp"
+    tools:context=".ChooseActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Choose operation"
+        android:textColor="#fff200"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageSum"
+                android:layout_width="wrap_content"
+                android:padding="4dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/arti" />
+
+            <ImageView
+                android:id="@+id/imageSub"
+                android:layout_width="wrap_content"
+                android:padding="4dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/eksi" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageMult"
+                android:layout_width="wrap_content"
+                android:padding="4dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/carpi" />
+
+            <ImageView
+                android:id="@+id/imageDiv"
+                android:layout_width="wrap_content"
+                android:padding="4dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bolme" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
